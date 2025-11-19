@@ -68,9 +68,8 @@
 
     <script>
         function sendToPrint() {
-            const qrCode = document.getElementById('qrCode').value;
-            const copies = document.getElementById('copies').value;
-
+            const qrCode = document.getElementById('artikl').value;
+            const copies = document.getElementById('ks').value;
             const url = `brotherwebprint://print?filename=INV.lbx&size=76x44.bin&text_ARTIKL=${artikl}&text_KS=${ks}&copies=1`;
             
             // Open the generated URL in a new window
@@ -79,8 +78,8 @@
 
         function downloadTemplate() {
             const link = document.createElement('a');
-            link.href = 'https://github.com/bigpresales/QR/raw/refs/heads/main/files_td2120.zip'; // Replace with the actual path to your hosted files_td2120.zip
-            link.download = 'files_td2120.zip';
+            link.href = 'https://github.com/Findman88/DATA-JM/raw/refs/heads/main/INV.lbx'; // Replace with the actual path to your hosted files
+            link.download = 'INV';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -88,3 +87,4 @@
     </script>
 </body>
 </html>
+
